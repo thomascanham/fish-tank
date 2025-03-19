@@ -1,0 +1,12 @@
+.footer {
+  width: 100vw;
+  padding: 40px;
+  color: white;
+
+  a {
+    text-decoration: underline;
+  }
+  p {
+    font-size: 12px;
+  }
+}
