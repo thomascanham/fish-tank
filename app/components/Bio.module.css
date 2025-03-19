@@ -1,0 +1,10 @@
+.bio {
+  width: 100vw;
+  color: white;
+  padding: 20px;
+  p {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+  }
+}
