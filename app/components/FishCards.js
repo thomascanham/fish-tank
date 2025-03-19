@@ -19,7 +19,6 @@ export default async function FishCards() {
 }
 
 function FishCard({ fish }) {
-  console.log('PASSED IN FISH', fish);
   const imageUrl = `${process.env.DATABASE}/api/files/${fish.collectionName}/${fish.id}/${fish.image}`;
   const bg = fish.image ? { backgroundImage: `url("${imageUrl}")` } : null;
 
