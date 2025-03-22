@@ -24,15 +24,15 @@ function FishCard({ fish }) {
   const bg = fish.image ? { backgroundImage: `url("${imageUrl}")` } : null;
 
   return (
-    <Link href={`/${fish.id}`}>
-      <div className={styles.card} >
-        <div className={styles.card__image} style={bg} />
-        <div className={styles.card__content}>
-          <h3 className={styles.card__title}>{fish.name}</h3>
-          <p className={styles.card__subtitle}>{fish.scientificName}</p>
-          <p className={styles.card__bio}>{fish.bio}</p>
-        </div>
+    // <Link href={`/${fish.id}`}>
+    <div className={styles.card} >
+      <div className={styles.card__image} style={bg} />
+      <div className={styles.card__content}>
+        <h3 className={styles.card__title}>{fish.name}</h3>
+        <p className={styles.card__subtitle}>{fish.scientificName}</p>
+        <p className={styles.card__bio}>{fish.bio}</p>
       </div>
-    </Link>
+    </div>
+    // </Link>
   )
 }
