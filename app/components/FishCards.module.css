@@ -28,7 +28,7 @@
 .card__content {
   padding: 16px;
 
-  h3 {
+  .card__content h3 {
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;

@@ -3,10 +3,10 @@
   padding: 40px;
   color: white;
 
-  a {
+  .footer a {
     text-decoration: underline;
   }
-  p {
+  .footer p {
     font-size: 12px;
   }
 }
