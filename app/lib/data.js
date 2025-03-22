@@ -12,3 +12,13 @@ export async function getFish() {
     return [];
   }
 }
+
+export async function getFishById(id) {
+  try {
+    const res = await pocketbase.collection("fish").getOne(id);
+    return res;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+}

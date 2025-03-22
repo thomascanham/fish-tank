@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './FishCards.module.css';
 import { getFish } from '../lib/data';
 
@@ -23,13 +24,15 @@ function FishCard({ fish }) {
   const bg = fish.image ? { backgroundImage: `url("${imageUrl}")` } : null;
 
   return (
-    <div className={styles.card} >
-      <div className={styles.card__image} style={bg} />
-      <div className={styles.card__content}>
-        <h3 className={styles.card__title}>{fish.name}</h3>
-        <p className={styles.card__subtitle}>{fish.scientificName}</p>
-        <p className={styles.card__bio}>{fish.bio}</p>
+    <Link href={`/${fish.id}`}>
+      <div className={styles.card} >
+        <div className={styles.card__image} style={bg} />
+        <div className={styles.card__content}>
+          <h3 className={styles.card__title}>{fish.name}</h3>
+          <p className={styles.card__subtitle}>{fish.scientificName}</p>
+          <p className={styles.card__bio}>{fish.bio}</p>
+        </div>
       </div>
-    </div >
+    </Link>
   )
 }
